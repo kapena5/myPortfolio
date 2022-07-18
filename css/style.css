@@ -1,0 +1,34 @@
+.header {
+    background-color: #9B8461;
+    padding: 30px 30px 30px 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+h1 {
+    color: white;
+    padding-left: 30px;
+    text-align: center;
+}
+.links {
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+    list-style-type: none;
+    color: white;
+}
+body {
+    margin: 0 auto;
+    font-family: 'Prata', serif;
+}
+.heroContainer {
+    background-image: url("/images/hero.png");
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.heroText {
+    color: white;
+    font-size: xx-large;
+}
