@@ -22,13 +22,18 @@ body {
     font-family: 'Prata', serif;
 }
 .heroContainer {
-    background-image: url("/images/hero.png");
+    background: url("../images/hero.png");
     height: 1000px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: right;
 }
 .heroText {
     color: white;
-    font-size: xx-large;
+    font-size: 60px;
+    width: 400px;
+    padding: 50px;
 }
