@@ -74,27 +74,62 @@ button {
     height: 50px;
     font-size: 20px;
 }
-.skills .skillsCards {
-    display: grid;
-    grid-template-areas:
-        "userResearch uiDesign webDevelopment"
-    ;
+.skills {
+    padding: 50px;
+}
+.skillsCards {
+    display: flex;
     align-content: space-around;
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
 }
-.skills .skillsCards .userResearch {
+.skillsImg {
+    height: 350px;
+}
+.userResearch {
     grid-area: userResearch;
     padding: 25px;
 }
-.skills .skillsCards .uiDesign {
+.uiDesign {
     grid-area: uiDesign;
     padding: 25px;
 }
-.skills .skillsCards .webDevelopment {
+.webDevelopment {
     grid-area: webDevelopment;
     padding: 25px;
+}
+.projects {
+    padding: 50px;
+}
+.projectsCards {
+    display: grid;
+    grid-template-areas:
+        "wildHeart"
+        "usda"
+        "streamers"
+    ;
+    align-content: space-around;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+    row-gap: 150px;
+}
+.wildHeart {
+    grid-area: wildHeart;
+    display: flex;
+    gap: 150px;
+}
+.usda {
+    grid-area: usda;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 150px;
+}
+.streamers {
+    grid-area: streamers;
+    display: flex;
+    gap: 150px;
 }
 footer {
     background-color: #9B8461;
@@ -102,7 +137,6 @@ footer {
 footer ul {
     display: inline-block;
     vertical-align: top;
-    margin-left: 10%;
 }
 footer li {
     padding: 5px;
@@ -134,4 +168,14 @@ h4 {
 p {
     font-size: 17px;
     font-family: 'Avenir';
+}
+@media only screen and (max-width: 00) {
+    .skillsCards {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
