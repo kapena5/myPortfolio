@@ -37,8 +37,8 @@ header nav ul li {
     background-color: #030303;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .content {
     color: white;
@@ -74,18 +74,27 @@ button {
     height: 50px;
     font-size: 20px;
 }
-.skills {
+.section {
+    padding: 100px;
+}
+.container {
     padding: 50px;
 }
-.skillsCards {
+.skillsContainer {
     display: flex;
     align-content: space-around;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+}
+.skillsCard {
+    height: 500px;
+    width: 400px;
 }
 .skillsImg {
-    height: 350px;
+    height: 400px;
+    width: inherit;
+    object-fit: cover;
+    object-position: 100% 0;
+    border-radius: 15px;
 }
 .userResearch {
     grid-area: userResearch;
@@ -99,21 +108,26 @@ button {
     grid-area: webDevelopment;
     padding: 25px;
 }
-.projects {
-    padding: 50px;
-}
-.projectsCards {
+.projectsContainer {
     display: grid;
     grid-template-areas:
         "wildHeart"
         "usda"
         "streamers"
     ;
-    align-content: space-around;
-    justify-content: space-around;
-    padding-left: 50px;
-    padding-right: 50px;
-    row-gap: 150px;
+    justify-content: center;
+    align-content: center;
+}
+.projectsCard {
+    height: 500px;
+    width: 1200px;
+    padding-bottom: 200px;
+}
+.projectsImg {
+    height: 600px;
+    width: 700px;
+    object-fit: contain;
+    border-radius: 15px;
 }
 .wildHeart {
     grid-area: wildHeart;
@@ -169,7 +183,7 @@ p {
     font-size: 17px;
     font-family: 'Avenir';
 }
-@media only screen and (max-width: 00) {
+@media only screen and (max-width: 700) {
     .skillsCards {
         display: flex;
         flex-direction: column;
