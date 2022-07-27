@@ -210,4 +210,7 @@ p {
     .section {
         padding: 50px 50px 50px 50px;
     }
+    .resumeButton {
+        width: 200px;
+    }
 }
