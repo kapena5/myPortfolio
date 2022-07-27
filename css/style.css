@@ -181,7 +181,7 @@ p {
     font-size: 17px;
     font-family: 'Avenir';
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     .content {
         grid-template-areas:
         "heroPic"
