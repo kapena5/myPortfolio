@@ -88,12 +88,12 @@ button {
     justify-content: space-evenly;
 }
 .skillsCard {
-    height: 500px;
-    width: 300px;
+    height: 700px;
+    width: 500px;
     padding: 25px;
 }
 .skillsImg {
-    height: 300px;
+    height: 500px;
     width: inherit;
     object-fit: cover;
     object-position: 100% 0;
@@ -181,7 +181,7 @@ p {
     font-size: 17px;
     font-family: 'Avenir';
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
     .content {
         grid-template-areas:
         "heroPic"
