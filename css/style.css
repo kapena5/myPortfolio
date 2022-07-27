@@ -32,25 +32,30 @@ header nav ul li {
     color: white;
     font-size: 20px;
 }
-.heroImg {
+.hero {
     height: 900px;
     background-color: #030303;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-left: 100px;
-    padding-right: 100px;
+    width: 100%;
 }
 .content {
+    max-width: 1300px;
+    margin: 0 auto;
     color: white;
     display: grid;
     grid-template-areas:
         "heroPic heroText"
         "heroPic resumeButton"
     ;
+    padding: 100px;
+    column-gap: 75px;
 }
 .heroPic {
     border-radius: 100%;
     grid-area: heroPic;
+    height: 700px;
+    width: auto;
 }
 .heroText {
     font-size: 50px;
@@ -75,75 +80,68 @@ button {
     font-size: 20px;
 }
 .section {
-    padding: 100px;
-}
-.container {
-    padding: 50px;
+    padding: 50px 100px 50px 100px;
 }
 .skillsContainer {
     display: flex;
-    align-content: space-around;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .skillsCard {
     height: 500px;
-    width: 400px;
+    width: 300px;
+    padding: 25px;
 }
 .skillsImg {
-    height: 400px;
+    height: 300px;
     width: inherit;
     object-fit: cover;
     object-position: 100% 0;
     border-radius: 15px;
 }
-.userResearch {
-    grid-area: userResearch;
-    padding: 25px;
-}
-.uiDesign {
-    grid-area: uiDesign;
-    padding: 25px;
-}
-.webDevelopment {
-    grid-area: webDevelopment;
-    padding: 25px;
-}
 .projectsContainer {
     display: grid;
-    grid-template-areas:
-        "wildHeart"
-        "usda"
-        "streamers"
+    grid-template-areas: 
+        "wildHeartImg wildHeartContent"
+        "usdaContent usdaImg"
+        "streamersImg streamersContent"
     ;
-    justify-content: center;
-    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    align-items: center;
+    padding: 25px;
+    column-gap: 50px;
+    row-gap: 200px;
+}
+.wildHeartImg {
+    grid-area: wildHeartImg;
+}
+.wildHeartcontent {
+    grid-area: wildHeartContent;
+}
+.usdaImg {
+    grid-area: usdaImg;
+}
+.usdaContent {
+    grid-area: usdaContent;
+}
+.streamersImg {
+    grid-area: streamersImg;
+}
+.streamersContent {
+    grid-area: streamersContent;
 }
 .projectsCard {
-    height: 500px;
+    height: 800px;
     width: 1200px;
-    padding-bottom: 200px;
+    padding: 25px;
 }
 .projectsImg {
-    height: 600px;
-    width: 700px;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
     border-radius: 15px;
-}
-.wildHeart {
-    grid-area: wildHeart;
-    display: flex;
-    gap: 150px;
-}
-.usda {
-    grid-area: usda;
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 150px;
-}
-.streamers {
-    grid-area: streamers;
-    display: flex;
-    gap: 150px;
+    padding-right: 100px;
 }
 footer {
     background-color: #9B8461;
@@ -183,13 +181,33 @@ p {
     font-size: 17px;
     font-family: 'Avenir';
 }
-@media only screen and (max-width: 700) {
-    .skillsCards {
-        display: flex;
-        flex-direction: column;
-        align-content: space-around;
-        justify-content: space-between;
-        padding-left: 50px;
-        padding-right: 50px;
+@media only screen and (max-width: 700px) {
+    .content {
+        grid-template-areas:
+        "heroPic"
+        "heroText"
+        "resumeButton"
+    ;
+    }
+    .heroPic {
+        height: 500px;
+    }
+    .hero {
+        height: 1200px;
+    }
+    .projectsContainer {
+        grid-template-areas: 
+        "wildHeartImg"
+        "wildHeartContent"
+        "usdaContent"
+        "usdaImg"
+        "streamersImg"
+        "streamersContent"
+        ;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .section {
+        padding: 50px 50px 50px 50px;
     }
 }
