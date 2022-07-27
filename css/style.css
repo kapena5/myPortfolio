@@ -48,6 +48,7 @@ header nav ul li {
         "heroPic heroText"
         "heroPic resumeButton"
     ;
+    grid-template-columns: 1fr, 1fr;
     padding: 100px;
     column-gap: 75px;
 }
@@ -68,7 +69,7 @@ header nav ul li {
     width: fit-content;
     grid-area: resumeButton;
 }
-button {
+.btn-primary {
     background-color: #37C0A6; 
     color: white;
     font-family: "Prata";
@@ -79,6 +80,10 @@ button {
     height: 50px;
     font-size: 20px;
 }
+.btn-primary:hover {
+    background-color: #1a9a82; 
+    cursor: pointer;
+}
 .section {
     padding: 50px 100px 50px 100px;
 }
@@ -88,15 +93,14 @@ button {
     justify-content: space-evenly;
 }
 .skillsCard {
-    height: 700px;
-    width: 500px;
+    height: 600px;
+    width: 400px;
     padding: 25px;
 }
 .skillsImg {
-    height: 500px;
-    width: inherit;
+    height: 400px;
+    width: 100%;
     object-fit: cover;
-    object-position: 100% 0;
     border-radius: 15px;
 }
 .projectsContainer {
@@ -191,6 +195,7 @@ p {
     }
     .heroPic {
         height: 500px;
+        width: fit-content;
     }
     .hero {
         height: 1200px;
