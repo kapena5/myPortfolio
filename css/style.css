@@ -65,7 +65,7 @@ header nav ul li {
     justify-content: flex-start;
 }
 .resumeButton {    
-    width: 300px;
+    width: fit-content;
     grid-area: resumeButton;
 }
 button {
@@ -181,7 +181,7 @@ p {
     font-size: 17px;
     font-family: 'Avenir';
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .content {
         grid-template-areas:
         "heroPic"
