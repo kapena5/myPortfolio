@@ -33,7 +33,7 @@ header nav ul li {
     font-size: 20px;
 }
 .hero {
-    height: 900px;
+    height: 30%;
     background-color: #030303;
     background-size: cover;
     background-repeat: no-repeat;
@@ -55,8 +55,8 @@ header nav ul li {
 .heroPic {
     border-radius: 100%;
     grid-area: heroPic;
-    height: 700px;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 .heroText {
     font-size: 50px;
@@ -185,7 +185,39 @@ p {
     font-size: 17px;
     font-family: 'Avenir';
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 19px;
+    }
+    p {
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 41px;
+    }
+    h2 {
+        font-size: 34px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 21px;
+    }
+    p {
+        font-size: 17px;
+    }
     .content {
         grid-template-areas:
         "heroPic"
@@ -198,7 +230,7 @@ p {
         width: fit-content;
     }
     .hero {
-        height: 1200px;
+        height: auto;
     }
     .projectsContainer {
         grid-template-areas: 
@@ -213,9 +245,12 @@ p {
         grid-auto-rows: minmax(100px, auto);
     }
     .section {
-        padding: 50px 50px 50px 50px;
+        padding: 50px 25px 50px 25px;
     }
     .resumeButton {
         width: 200px;
     }
+}
+@media only screen and (max-width: 1200px) {
+
 }
