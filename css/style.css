@@ -201,6 +201,10 @@ p {
     p {
         font-size: 17px;
     }
+    .heroPic {
+        height: 300px;
+        width: fit-content;
+    }
 }
 @media only screen and (max-width: 768px) {
     h1 {
@@ -252,5 +256,8 @@ p {
     }
 }
 @media only screen and (max-width: 1200px) {
-
+    .heroPic {
+        height: 700px;
+        width: fit-content;
+    }
 }
