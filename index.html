@@ -8,24 +8,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
   <body>
-    <section class="navigation">
+    <!--Navigation-->
     <header>
-        <span class="image-clickable">
-          <a href="index.html">
-            <img src="images/logo.png" alt="main-logo" class="logo" />
-          </a>
-        </span>
-        <h1 class="name">Che</h1>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#" class="projectsLink">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-    </section>
+      <a href="index.html">
+        <img src="images/logo.png" alt="main-logo" class="logo" />
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#" class="aboutLink">About</a></li>
+          <li><a href="#" class="skillsLink">Skills</a></li>
+          <li><a href="#" class="projectsLink">Projects</a></li>
+          <li><a href="#" class="contactLink">Contact</a></li>
+        </ul>
+      </nav>
+      <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/che-schumacher-69677623/">
+        <img src="images/linkedin.png" class="linkedInIcon">
+      </a>
+    </header>
+
+    <!--Hero-->
     <section class="hero">
         <div class="content">
             <img src="images/hero2.PNG" class="heroPic">
@@ -34,8 +35,18 @@
         </div>
     </section>
     <img src="images/heroFooter.png" class="heroFooter">
+
+    <!--About-->
+    <section class="about section">
+      <h1 class="aboutHeader">About</h1>
+      <div class="aboutContainer container">
+        <!--Put stuff here-->
+      </div>
+    </section>
+
+    <!--Skills-->
     <section class="skills section">
-      <h1>Skills</h1>
+      <h1 class="skillsHeader">Skills</h1>
       <div class="skillsContainer container">
         <div class="userResearch skillsCard">
           <img src="images/user_research.jpeg" class="skillsImg">
@@ -57,6 +68,8 @@
         </div>
       </div>
     </section>
+
+    <!--Projects-->
     <section class="projects section">
       <h1 class="projectsHeader">Projects</h1>
       <div class="projectsContainer container">
@@ -80,12 +93,22 @@
         </div>
       </div>
     </section>
+    
+    <!--Contact-->
+    <section class="contact section">
+      <h1 class="contactHeader">Contact</h1>
+      <div class="contactContainer container">
+        <!--Put stuff here-->
+      </div>
+    </section>
+
+    <!--Footer-->
     <footer>
         <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#" class="projectsLink">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+          <li><a href="#" class="aboutLink">About</a></li>
+          <li><a href="#" class="skillsLink">Skills</a></li>
+          <li><a href="#" class="projectsLink">Projects</a></li>
+          <li><a href="#" class="contactLink">Contact</a></li>
           </ul>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

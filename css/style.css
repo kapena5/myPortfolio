@@ -1,36 +1,41 @@
-header {
+header, footer {
     background-color: #9B8461;
-    height: 130px;
+    height: 100px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    padding: 0px 10%;
 }
-header ul {
-    display: inline-block;
-}
-header nav ul li a {
-    padding: 5px;
+header nav ul li a, footer ul li a {
     color: white;
     font-size: 25px;
+    font-weight: 400;
     text-decoration: none;
 }
-header nav ul li {
-    display: inline;
+footer {
+    justify-content: center;
 }
 .logo {
-    padding: 20px;
-    float: left;
+    height: 60px;
+    width: auto;
+    cursor: pointer;
 }
-.name {
-    color: white;
-    align-items: center;
-    padding-right: 20px;
-    padding-left: 20px;
+.linkedInIcon {
+    height: 50px;
+    width: auto;
+}
+.nav-links {
+    list-style: none;
 }
 .nav-links li {
-    padding: 5px;
-    color: white;
-    font-size: 20px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+    color: #2C333D;
 }
 .hero {
     height: auto;
@@ -39,7 +44,7 @@ header nav ul li {
 }
 .content {
     max-width: 1300px;
-    margin: 0;
+    margin: auto;
     color: white;
     display: grid;
     grid-template-areas:
@@ -56,7 +61,7 @@ header nav ul li {
     width: 100%;
 }
 .heroText {
-    font-size: 50px;
+    font-size: 4vw;
     grid-area: heroText;
     display: flex;
     align-items: flex-end;
@@ -94,11 +99,11 @@ header nav ul li {
 }
 .skillsCard {
     height: 600px;
-    width: 400px;
+    width: 300px;
     padding: 25px;
 }
 .skillsImg {
-    height: 400px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px;
@@ -146,23 +151,6 @@ header nav ul li {
     object-fit: cover;
     border-radius: 15px;
     padding-right: 100px;
-}
-footer {
-    background-color: #9B8461;
-}
-footer ul {
-    display: inline-block;
-    vertical-align: top;
-}
-footer li {
-    padding: 5px;
-    color: white;
-    font-size: 20px;
-    display: inline;
-}
-footer ul li a {
-    text-decoration: none;
-    color: white;
 }
 body {
     margin: 0 auto;
