@@ -164,7 +164,7 @@ a {
     padding: 25px;
 }
 .skillsImg {
-    height: 300px;
+    height: 200px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px;
@@ -212,6 +212,10 @@ a {
     object-fit: cover;
     border-radius: 15px;
     padding-right: 100px;
+}
+.contactImg {
+    width: 100%;
+    max-width: 500px;
 }
 h1 {
     font-size: 43px;
@@ -309,4 +313,8 @@ p {
     .nav-menu.active {
         left: 0;
     }
+}
+.revealUp {
+    opacity: 0;
+    visibility: hidden;
 }

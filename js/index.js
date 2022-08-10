@@ -1,52 +1,70 @@
-const bigFontSize = "50px";
-const normalFontSize = "40px";
-const transitionTime = "1300";
+//scroll animation for headers
+gsap.registerPlugin(ScrollTrigger);
+// REVEAL //
+gsap.utils.toArray(".revealUp").forEach(function (elem) {
+  ScrollTrigger.create({
+    trigger: elem,
+    start: "top 80%",
+    end: "bottom 20%",
+    // markers: true,
+    onEnter: function () {
+      gsap.fromTo(
+        elem,
+        { y: 100, autoAlpha: 0 },
+        {
+          duration: 1.25,
+          y: 0,
+          autoAlpha: 1,
+          ease: "back",
+          overwrite: "auto"
+        }
+      );
+    },
+    onLeave: function () {
+      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+    },
+    onEnterBack: function () {
+      gsap.fromTo(
+        elem,
+        { y: -100, autoAlpha: 0 },
+        {
+          duration: 1.25,
+          y: 0,
+          autoAlpha: 1,
+          ease: "back",
+          overwrite: "auto"
+        }
+      );
+    },
+    onLeaveBack: function () {
+      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+    }
+  });
+});  
 
+//scroll to header after button click
 $('.aboutLink').click(function() {
   $('html, body').animate({
       scrollTop: $('.aboutHeader').offset().top - 50
-    });
-    $('.aboutHeader').animate({
-      fontSize: bigFontSize
-    }, transitionTime);
-    $('.aboutHeader').animate({
-      fontSize: normalFontSize
-    }, transitionTime);
+    }, 1300);
 });
 $('.skillsLink').click(function() {
   $('html, body').animate({
       scrollTop: $('.skillsHeader').offset().top - 50
-    });
-    $('.skillsHeader').animate({
-      fontSize: bigFontSize
-    }, transitionTime);
-    $('.skillsHeader').animate({
-      fontSize: normalFontSize
-    }, transitionTime);
+    }, 1300);
 });
 $('.projectsLink').click(function() {
     $('html, body').animate({
         scrollTop: $('.projectsHeader').offset().top - 50
-      });
-      $('.projectsHeader').animate({
-        fontSize: bigFontSize
-      }, transitionTime);
-      $('.projectsHeader').animate({
-        fontSize: normalFontSize
-      }, transitionTime);
+      }, 1300);
 });
 $('.contactLink').click(function() {
   $('html, body').animate({
       scrollTop: $('.contactHeader').offset().top - 50
-    });
-    $('.contactHeader').animate({
-      fontSize: bigFontSize
-    }, transitionTime);
-    $('.contactHeader').animate({
-      fontSize: normalFontSize
-    }, transitionTime);
+    }, 1300);
 });
 
+//deactivate scroll if hambuger menu is expanded 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -54,17 +72,12 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
   document.body.classList.toggle("stop-scrolling");
+  document.body.addClass("fixed-position");
 });
 
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
   document.body.classList.remove("stop-scrolling");
+  document.body.removeClass("fixed-position");
 }));
-
-// if (navMenu.hasClass("active")) {
-//   document.body.classList.add("stop-scrolling");
-// } else {
-//   document.body.classList.remove("stop-scrolling");
-
-// }

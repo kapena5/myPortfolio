@@ -64,7 +64,7 @@
 
     <!--About-->
     <section class="about section">
-      <h1 class="aboutHeader">About</h1>
+      <h1 class="aboutHeader revealUp">About</h1>
       <div class="aboutContainer container">
         <!--Put stuff here-->
       </div>
@@ -72,10 +72,10 @@
 
     <!--Skills-->
     <section class="skills section">
-      <h1 class="skillsHeader">Skills</h1>
+      <h1 class="skillsHeader revealUp">Skills</h1>
       <div class="skillsContainer container">
         <div class="userResearch skillsCard">
-          <img src="images/user_research.jpeg" class="skillsImg">
+          <img src="images/user_research.jpeg" class="skillsImg img">
           <h4>User Research</h4>
           <p>Description of user research.</p>
           <button class="btn-primary">View</button>
@@ -97,7 +97,7 @@
 
     <!--Projects-->
     <section class="projects section">
-      <h1 class="projectsHeader">Projects</h1>
+      <h1 class="projectsHeader revealUp">Projects</h1>
       <div class="projectsContainer container">
         <img src="images/whs.png" class="wildHeartImg projectsImg">
         <div class="wildHeartContent">
@@ -122,9 +122,10 @@
     
     <!--Contact-->
     <section class="contact section">
-      <h1 class="contactHeader">Contact</h1>
+      <h1 class="contactHeader revealUp">Contact</h1>
       <div class="contactContainer container">
         <!--Put stuff here-->
+        <img src="images/placeholderImg.png" class="contactImg">
       </div>
     </section>
 
@@ -144,7 +145,13 @@
         </ul>
       </nav>
     </footer>
+
+
+  <div id="grayout" style="display: none;"></div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="js/index.js"></script>
-</body>
+    </body>
 </html>
