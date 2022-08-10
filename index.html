@@ -20,20 +20,27 @@
   <body>
     <!--Navigation-->
     <header>
-      <a href="index.html">
-        <img src="images/logo.png" alt="main-logo" class="logo" />
-      </a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#" class="aboutLink">About</a></li>
-          <li><a href="#" class="skillsLink">Skills</a></li>
-          <li><a href="#" class="projectsLink">Projects</a></li>
-          <li><a href="#" class="contactLink">Contact</a></li>
+      <nav class="nav-bar">
+        <a href="index.html">
+          <img src="images/icons/logo.png" alt="main-logo" class="logo" />
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#" class="nav-link aboutLink">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link skillsLink">Skills</a></li>
+          <li class="nav-item"><a href="#" class="nav-link projectsLink">Projects</a></li>
+          <li class="nav-item"><a href="#" class="nav-link contactLink">Contact</a></li>
+          <li class="nav-item">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/che-schumacher-69677623/" class="nav-link">
+              <img src="images/icons/linkedin.png" class="linkedInIcon">
+            </a>
+          </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
-      <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/che-schumacher-69677623/">
-        <img src="images/linkedin.png" class="linkedInIcon">
-      </a>
     </header>
 
     <!--Hero-->
@@ -123,12 +130,19 @@
 
     <!--Footer-->
     <footer>
-        <ul class="nav-links">
-          <li><a href="#" class="aboutLink">About</a></li>
-          <li><a href="#" class="skillsLink">Skills</a></li>
-          <li><a href="#" class="projectsLink">Projects</a></li>
-          <li><a href="#" class="contactLink">Contact</a></li>
-          </ul>
+      <nav class="nav-bar footer">
+        <ul class="nav-footer">
+          <li class="nav-item"><a href="#" class="nav-link aboutLink">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link skillsLink">Skills</a></li>
+          <li class="nav-item"><a href="#" class="nav-link projectsLink">Projects</a></li>
+          <li class="nav-item"><a href="#" class="nav-link contactLink">Contact</a></li>
+          <li class="nav-item">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/che-schumacher-69677623/" class="nav-link">
+              <img src="images/icons/linkedin.png" class="linkedInIcon">
+            </a>
+          </li>
+        </ul>
+      </nav>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/index.js"></script>

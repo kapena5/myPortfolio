@@ -1,41 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Prata';
+}
 header, footer {
     background-color: #9B8461;
-    height: 100px;
+}
+li {
+    list-style: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.nav-bar {
+    min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 10%;
+    padding: 0 24px;
 }
-header nav ul li a, footer ul li a {
-    color: white;
-    font-size: 25px;
-    font-weight: 400;
+.nav-menu, .nav-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.nav-item {
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-link {
+    transition: all 0.3s ease 0s;
     text-decoration: none;
 }
-footer {
-    justify-content: center;
+.nav-link:hover {
+    color: #2C333D;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    border-radius: 2px;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+.footer {
+    display: flex;
+    justify-content: end;
 }
 .logo {
-    height: 60px;
+    height: 40px;
     width: auto;
     cursor: pointer;
 }
 .linkedInIcon {
-    height: 50px;
+    height: 30px;
     width: auto;
-}
-.nav-links {
-    list-style: none;
-}
-.nav-links li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-.nav-links li a {
-    transition: all 0.3s ease 0s;
-}
-.nav-links li a:hover {
-    color: #2C333D;
 }
 .hero {
     height: auto;
@@ -181,12 +213,8 @@ footer {
     border-radius: 15px;
     padding-right: 100px;
 }
-body {
-    margin: 0 auto;
-    font-family: 'Prata';
-}
 h1 {
-    font-size: 50px;
+    font-size: 43px;
     padding-left: 50px;
 }
 h2 {
@@ -202,30 +230,12 @@ p {
     font-size: 17px;
     font-family: 'Avenir';
 }
-@media only screen and (max-width: 320px) {
-    h1 {
-        font-size: 38px;
-    }
-    h2 {
-        font-size: 30px;
-    }
-    h3 {
-        font-size: 25px;
-    }
-    h4 {
-        font-size: 19px;
-    }
-    p {
-        font-size: 17px;
-    }
-    .heroPic {
-        height: auto;
-        width: 100%;
-    }
+.fixed-position {
+    position: fixed;
 }
 @media only screen and (max-width: 768px) {
     h1 {
-        font-size: 41px;
+        font-size: 40px;
     }
     h2 {
         font-size: 34px;
@@ -271,10 +281,32 @@ p {
     .resumeButton {
         width: 200px;
     }
-}
-@media only screen and (max-width: 1200px) {
-    .heroPic {
-        height: auto;
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #9B8461;
         width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-menu.active {
+        left: 0;
     }
 }
