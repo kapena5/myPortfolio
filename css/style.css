@@ -86,6 +86,7 @@ a {
     grid-template-columns: 1fr, 1fr;
     padding: 100px;
     column-gap: 50px;
+    row-gap: 50px;
 }
 .heroPic {
     grid-area: heroPic;
@@ -93,11 +94,12 @@ a {
     width: 100%;
 }
 .heroText {
-    font-size: 4vw;
+    font-size: 3vw;
     grid-area: heroText;
+    text-align: center;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 .heroFooter {
     height: auto;
@@ -120,11 +122,14 @@ a {
     position: absolute;
     top: 0;
     max-width: 100%;
-    animation: animate calc(8s * var(--i)) linear infinite;
+    animation: animate calc(12s * var(--i)) linear infinite;
 }
 @keyframes animate {
     0% {
         transform: translateX(-100%)
+    }
+    50% {
+        transform: translateX(0%)
     }
     100% {
         transform: translateX(100%);
@@ -133,6 +138,7 @@ a {
 }
 .resumeButton {    
     width: fit-content;
+    margin: auto;
     grid-area: resumeButton;
 }
 .btn-primary {
