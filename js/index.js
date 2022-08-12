@@ -4,13 +4,13 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.utils.toArray(".revealUp").forEach(function (elem) {
   ScrollTrigger.create({
     trigger: elem,
-    start: "top 80%",
-    end: "bottom 20%",
+    start: "top 90%",
+    end: "bottom 10%",
     // markers: true,
     onEnter: function () {
       gsap.fromTo(
         elem,
-        { y: 100, autoAlpha: 0 },
+        { y: -60, autoAlpha: 0 },
         {
           duration: 1.25,
           y: 0,
@@ -26,7 +26,7 @@ gsap.utils.toArray(".revealUp").forEach(function (elem) {
     onEnterBack: function () {
       gsap.fromTo(
         elem,
-        { y: -100, autoAlpha: 0 },
+        { y: -60, autoAlpha: 0 },
         {
           duration: 1.25,
           y: 0,
