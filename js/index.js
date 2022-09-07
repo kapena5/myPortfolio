@@ -43,7 +43,7 @@ gsap.utils.toArray(".revealUp").forEach(function (elem) {
 });  
 
 const scrollTime = 1000;
-const offSet = 50;
+const offSet = 70;
 
 //scroll to header after button click
 $('.aboutLink').click(function() {

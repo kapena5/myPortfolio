@@ -211,15 +211,15 @@ a {
 .projectsContainer {
     display: grid;
     grid-template-areas: 
-        "wildHeartImg wildHeartContent"
-        "usdaContent usdaImg"
+        "stewardImg stewardContent"
+        "wildHeartContent wildHeartImg"
         "streamersImg streamersContent"
     ;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
     justify-items: center;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 50px;
     row-gap: 50px;
 }
 .wildHeartImg {
@@ -228,15 +228,15 @@ a {
 }
 .wildHeartContent {
     grid-area: wildHeartContent;
-    justify-self: flex-start;
+    justify-self: center;
     text-align: center;
 }
-.usdaImg {
-    grid-area: usdaImg;
+.stewardImg {
+    grid-area: stewardImg;
 }
-.usdaContent {
-    grid-area: usdaContent;
-    justify-self: flex-end;
+.stewardContent {
+    grid-area: stewardContent;
+    justify-self: center;
     text-align: center;
 }
 .streamersImg {
@@ -244,16 +244,13 @@ a {
 }
 .streamersContent {
     grid-area: streamersContent;
-    justify-self: flex-start;
+    justify-self: center;
     text-align: center;
 }
 .wildHeartContent > p, .usdaContent > p, .streamersContent > p {
     text-align: left;
 }
 .projectsImg {
-    width: 100%;
-}
-.contactImg {
     width: 100%;
     max-width: 500px;
 }
@@ -264,7 +261,7 @@ a {
     padding: 50px 0px;
 }
 .contact-form {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 h1 {
     font-size: 43px;
@@ -329,17 +326,17 @@ p {
     }
     .projectsContainer {
         grid-template-areas: 
+        "stewardImg"
+        "stewardContent"
         "wildHeartImg"
         "wildHeartContent"
-        "usdaImg"
-        "usdaContent"
         "streamersImg"
         "streamersContent"
         ;
         grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(100px, auto);
+        grid-auto-rows: minmax(100px, auto);;
     }
-    .wildHeartContent, .usdaContent, .streamersContent {
+    .wildHeartContent, .stewardContent, .streamersContent {
         justify-self: center;
         text-align: center;
     }
