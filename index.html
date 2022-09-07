@@ -79,10 +79,11 @@
       <div class="aboutContainer container">
         <img src="images/kauai_1.jpg" class="kauaiImg">
         <div class="text">
-          <p>Aloha! My name is Che Schumacher. I'm a UX/UI Designer with a background in software quality assurance and software development.
-            Over the years I have come to recognize more and more my passion for good design. Software quality is not just about identifying
-            bugs in the system or product, but asking questions like "Will the end user successfully complete their task in an 
-            efficient manner?"
+          <p>Aloha! My name is Che Schumacher and I'm a native Hawaiian tech professional. 
+            I'm a UX/UI Designer with a background in software quality assurance and software development.
+            Over the years I have come to recognize more and more my passion for good design. 
+            I'm constantly thinking about 
+            "Will the end user successfully complete their task in an efficient manner?"
           </p>
         </div>
       </div>
@@ -95,22 +96,41 @@
         <div class="userResearch skillsCard">
           <img src="images/user_research.jpeg" class="skillsImg">
           <h4>User Research</h4>
-          <p>Description of user research.</p>
-          <button class="btn-primary">View</button>
+          <!-- <p>Description of user research.</p>
+          <button class="btn-primary">View</button> -->
         </div>
         <div class="uiDesign skillsCard">
           <img src="images/web_design.jpeg" class="skillsImg">
           <h4>UI Design</h4>
-          <p>Description of user research.</p>
-          <button class="btn-primary">View</button>
+          <!-- <p>Description of user research.</p>
+          <button class="btn-primary">View</button> -->
         </div>
         <div class="webDevelopment skillsCard">
           <img src="images/web_development.jpeg" class="skillsImg">
           <h4>Web Development</h4>
-          <p>Description of user research.</p>
-          <button class="btn-primary">View</button>
+          <!-- <p>Description of user research.</p>
+          <button class="btn-primary">View</button> -->
+        </div>
+        <div class="softwareQe skillsCard">
+          <img src="images/web_development.jpeg" class="skillsImg">
+          <h4>Software Quality Engineering</h4>
+          <!-- <p>Description of user research.</p>
+          <button class="btn-primary">View</button> -->
+        </div>
+        <div class="prototyping skillsCard">
+          <img src="images/web_development.jpeg" class="skillsImg">
+          <h4>Prototyping</h4>
+          <!-- <p>Description of user research.</p>
+          <button class="btn-primary">View</button> -->
+        </div>
+        <div class="wireframing skillsCard">
+          <img src="images/web_development.jpeg" class="skillsImg">
+          <h4>Wireframing</h4>
+          <!-- <p>Description of user research.</p>
+          <button class="btn-primary">View</button> -->
         </div>
       </div>
+    </div>
     </section>
 
     <!--Projects-->
@@ -139,13 +159,33 @@
     </section>
     
     <!--Contact-->
-    <section class="contact section">
-      <h1 class="contactHeader revealUp">Contact</h1>
-      <div class="contactContainer container">
-        <!--Put stuff here-->
-        <img src="images/placeholderImg.png" class="contactImg">
-      </div>
-    </section>
+    <div class="contactBackground">
+      <section class="contact section">
+        <h1 class="contactHeader revealUp">Contact</h1>
+        <div class="contactContainer container">
+          <!--Put stuff here-->
+          <form class="contact-form" method="post" action="php/contact.php">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        <div class="contact-form">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        <div class="contact-form">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+        <div class="contact-form">
+            <button type="submit" id="fcf-button" class="fcf-btn btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+        </div>
+        </div>
+      </section>
+    </div>
 
     <!--Footer-->
     <footer>
