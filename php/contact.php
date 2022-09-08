@@ -3,7 +3,7 @@ if (isset($_POST['Email'])) {
 
     // EDIT THE FOLLOWING TWO LINES:
     $email_to = "che.schumacher@gmail.com";
-    $email_subject = "You have a new contact!";
+    $email_subject = "New form submissions";
 
     function problem($error)
     {
@@ -28,7 +28,7 @@ if (isset($_POST['Email'])) {
     $message = $_POST['Message']; // required
 
     $error_message = "";
-    $email_exp = "/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
     if (!preg_match($email_exp, $email)) {
         $error_message .= 'The Email address you entered does not appear to be valid.<br>';
@@ -67,7 +67,7 @@ if (isset($_POST['Email'])) {
     @mail($email_to, $email_subject, $email_message, $headers);
 ?>
 
-    <!-- INCLUDE YOUR SUCCESS MESSAGE BELOW -->
+    INCLUDE YOUR SUCCESS MESSAGE BELOW
 
     Thanks for getting in touch. We'll get back to you soon.
 

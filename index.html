@@ -166,33 +166,36 @@
             </div>
          </div>
       </section>
+
       <!--Contact-->
       <div class="contactBackground">
       <section class="contact section">
          <h1 class="contactHeader revealUp">Contact</h1>
          <div class="contactContainer container">
-            <form class="contact-form" method="post" action="php/contact.php">
+          <form id="fcf-form-id" class="fcf-form-class" method="post" action="php/contact.php">
             <label for="Name" class="fcf-label">Your name</label>
             <div class="fcf-input-group">
-               <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
             </div>
-            <div class="contact-form">
-               <label for="Email" class="fcf-label">Your email address</label>
-               <div class="fcf-input-group">
-                  <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-               </div>
-               <div class="contact-form">
-                  <label for="Message" class="fcf-label">Your message</label>
-                  <div class="fcf-input-group">
-                     <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-                  </div>
-               </div>
-               <div class="contact-form">
-                  <button type="submit" id="fcf-button" class="btn-primary">Send</button>
-               </div>
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
             </div>
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="btn-primary fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+        </div>
       </section>
       </div>
+  
+
+      
       <!--Footer-->
       <footer>
          <nav class="nav-bar footer">
@@ -210,7 +213,7 @@
             </ul> -->
          </nav>
       </footer>
-      <div id="grayout" style="display: none;"></div>
+      
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
