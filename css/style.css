@@ -22,11 +22,49 @@ a {
     padding: 0 30px;
     position: relative;
 }
+/*  Rollover image styles  */
+.logos {
+    position: relative;
+    height: 40px;
+  }
+  .logoContainer img.logo-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .3s;
+    height: 40px;
+    width: auto;
+  }
+  .logoContainer:hover img.logo-top {
+    opacity: 1;
+  }
 .logo {
     height: 40px;
     width: auto;
-    cursor: pointer;
 }
+.nav-item-social {
+    position: relative;
+    height: 30px;
+}
+.social-container img.icon-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .3s;
+    height: 30px;
+    width: auto;
+  }
+  .social-container:hover img.icon-top {
+    opacity: 1;
+  }
 .nav-menu {
     position: absolute;
     left: 50%;
