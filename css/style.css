@@ -283,8 +283,8 @@ a {
 .contactHeader {
     padding: 50px 0px;
 }
-.contact-form {
-    /* border: 1px solid red; */
+.contactContainer > div {
+    text-align: center;
 }
 h1 {
     font-size: 43px;
@@ -403,21 +403,55 @@ p {
         margin: 16px 0;
     }
     .nav-menu.active {
-        /* left: 0; */
         left: 50%;
-        /* transform: translateX(-50%); */
     }
     .revealUp {
-        /* padding-left: 50px; */
         text-align: center;
     }
 }
-
+.conclusionSection {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.whsSite {
+    height: 1000px;
+    width: auto;
+    padding: 20px;
+}
+.sectionText {
+    padding: 20px;
+}
+.storyboardSection {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.whsStoryboardImg {
+    height: 500px;
+    width: auto;
+    padding: 20px;
+}
+.testingSection {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+hr {
+    margin: 60px;
+    border-bottom: 3px solid rgb(24, 24, 24);
+}
 input[type=text], select, textarea, input[type=email] {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
@@ -429,5 +463,5 @@ input[type=text], select, textarea, input[type=email] {
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
   }

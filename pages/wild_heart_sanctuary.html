@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="../css/caseStudy.css" type="text/css" rel="stylesheet">
+              <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJD9Z3C1QW"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'G-PJD9Z3C1QW');
+      </script>
+      <link href="../css/style.css" type="text/css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500&family=Prata&display=swap" rel="stylesheet">
       <link rel="icon" href="../images/logo.png">
+      <title>Che</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wild Heart Sanctuary Case Study</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500&family=Prata&display=swap" rel="stylesheet">
-        <link rel="icon" href="../images/logo.png">
     </head>
     <body>
-        <!--Navigation-->
+      <!--Navigation-->
       <header>
         <nav class="nav-bar">
            <a href="../index.html" class="logoContainer">
@@ -19,16 +25,18 @@
            </a>
            <ul class="nav-menu">
               <li class="nav-item">
-                 <a href="../index.html" class="nav-link aboutLink">About</a>
+                 <a href="../index.html" class="nav-link">Home</a>
               </li>
               <li class="nav-item">
-                 <a href="../index.html" class="nav-link skillsLink">Skills</a>
+                 <a href="#" class="nav-link">Projects</a>
+                 <div class="projects-content">
+                   <a href="#">Steward</a>
+                   <a href="../pages/wild_heart_sanctuary.html">Wild Heart Sanctuary</a>
+                   <a href="#">Streamers</a>
+                 </div>
               </li>
               <li class="nav-item">
-                 <a href="../index.html" class="nav-link projectsLink">Projects</a>
-              </li>
-              <li class="nav-item">
-                 <a href="../index.html" class="nav-link contactLink">Contact</a>
+                 <a href="#" class="nav-link">Other</a>
               </li>
            </ul>
            <ul class="social-media-links">
@@ -56,16 +64,24 @@
         </nav>
      </header>
 
-        <!--Jumbotron-->
-        <section class="containerJumbotron">
-            <div class="jumbotron jumbotron-fluid wildHeart">
-                <div class="heroContainer">
-                    <img src="../images/wildHeartSantuary/iPhone13Pro.png" class="jumbotronImg">
-                    <h1 class="display-4">Wild Heart Sanctuary Mobile Responsive Redesign</h1>
-                    <p class="lead">Wild Heart Sanctuary is all about helping wild and rescued mustangs live a fulfilling life.</p>
-                </div>
+        <!--Hero-->
+        <section class="hero">
+            <div class="content">
+            <img src="../images/wildHeartSantuary/iPhone13Pro.png" class="heroPic">
+            <h2 class="heroText">Wild Heart Sanctuary Redesign</h2>
+            <p>Wild Heart Sanctuary is all about helping wild and rescued mustangs live a fulfilling life.</p>
             </div>
         </section>
+        <div class="banner">
+            <img src="../images/gradient.png" class="heroFooter">
+            <div class="clouds">
+            <img src="../images/cloud1.png" style="--i:1;">
+            <img src="../images/cloud2.png" style="--i:2;">
+            <img src="../images/cloud3.png" style="--i:3;">
+            <img src="../images/cloud4.png" style="--i:4;">
+            <img src="../images/cloud5.png" style="--i:5;">
+            </div>
+        </div>
 
         <!--Research-->
         <section class="section">
@@ -212,14 +228,11 @@
         </section>
 
         <!--Footer-->
-        <footer>
-            <ul class="nav-links">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-        </footer>
+      <footer>
+        <div class="nav-bar footer">
+         <a>© Copyright 2022 - Che Schumacher</a>
+        </div>
+     </footer>
     </body>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
