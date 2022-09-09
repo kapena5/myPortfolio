@@ -600,6 +600,14 @@ input[type=text], select, textarea, input[type=email] {
   .whsHero {
     max-height: 500px;
   }
+  .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 100px;
+    column-gap: 40px;
+    row-gap: 20px;
+  }
   .hero-1 {
     display: flex;
     justify-content: center;
@@ -609,6 +617,11 @@ input[type=text], select, textarea, input[type=email] {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    color: white;
+    max-width: 500px;
+  }
+  .hero-2 > h2 {
+    text-align: center;
   }
 
 
