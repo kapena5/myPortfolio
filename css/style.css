@@ -136,6 +136,37 @@ a {
     height: 30px;
     width: auto;
 }
+.person-img {
+    border-radius: 100%;
+    height: 100px;
+}
+.overview {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 20px;
+}
+.team {
+    text-align: center;
+}
+.team-content {
+    display: flex;
+    column-gap: 20px;
+}
+.problem-statement {
+    max-width: 400px;
+}
+.problem-statement > h4 {
+    text-align: center;
+}
+.tools {
+    text-align: center;
+}
+.tools > ul > li {
+    font-size: 17px;
+    font-family: 'Avenir';
+}
 .hero {
     height: auto;
     background-color: #000000;
@@ -224,7 +255,7 @@ a {
     cursor: pointer;
 }
 .section {
-    padding-bottom: 100px;
+    padding-bottom: 40px;
     margin: 0px 120px;
 }
 .container {
@@ -332,6 +363,7 @@ h2 {
 }
 h3 {
     font-size: 31px;
+    padding: 20px 0px;
 }
 h4 {
     font-size: 23px;
@@ -447,7 +479,7 @@ p {
         text-align: center;
     }
 }
-.conclusionSection {
+.conclusion {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -461,6 +493,7 @@ p {
 }
 .sectionText {
     padding: 20px;
+    max-width: 600px;
 }
 .storyboardSection {
     padding: 20px;
@@ -469,9 +502,13 @@ p {
     align-items: center;
     justify-content: space-around;
 }
+.storyboard {
+    display: flex;
+    justify-content: center;
+}
 .whsStoryboardImg {
-    height: 500px;
-    width: auto;
+    max-height: 700px;
+    width: 100%;
     padding: 20px;
 }
 .testingSection {
@@ -482,8 +519,8 @@ p {
     justify-content: space-around;
 }
 hr {
-    margin: 60px;
-    border-bottom: 3px solid rgb(24, 24, 24);
+    margin: 0px 100px;
+    border-bottom: 2px solid rgb(87, 87, 87);
 }
 input[type=text], select, textarea, input[type=email] {
     width: 100%;
@@ -503,3 +540,75 @@ input[type=text], select, textarea, input[type=email] {
     border: none;
     border-radius: 4px;
   }
+  .whsResearchImg {
+    max-height: 400px;
+    width: 100%;
+  }
+  .research {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+  }
+  .first-part {
+    display: flex;
+    justify-content: center;
+  }
+  .second-part {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .user-persona {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .whsUserPersonaImg {
+    max-height: 500px;
+    width: 100%;
+  }
+  .whsConclusionImg {
+    max-height: 800px;
+  }
+  .conclusion-1 {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 20px;
+    justify-content: space-around;
+  }
+  .whsWireframeImg {
+    max-height: 700px;
+    width: 100%;
+  }
+  .wireframe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 40px;
+  }
+  .testing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .whsTestingImg {
+    max-height: 700px;
+    width: 100%;
+  }
+  .whsHero {
+    max-height: 500px;
+  }
+  .hero-1 {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+
