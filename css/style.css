@@ -311,8 +311,7 @@ a {
     grid-auto-rows: minmax(100px, auto);
     justify-items: center;
     align-items: center;
-    column-gap: 50px;
-    row-gap: 50px;
+    gap: 50px;
 }
 .wildHeartImg {
     grid-area: wildHeartImg;
