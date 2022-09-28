@@ -623,5 +623,8 @@ input[type=text], select, textarea, input[type=email] {
   .hero-2 > h2 {
     text-align: center;
   }
+  .bootcampImg {
+    height: 200px;
+  }
 
 
