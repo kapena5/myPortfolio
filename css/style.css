@@ -509,7 +509,6 @@ p {
 .whsStoryboardImg {
     max-height: 700px;
     width: 100%;
-    padding: 20px;
 }
 .testingSection {
     padding: 20px;
@@ -548,8 +547,8 @@ input[type=text], select, textarea, input[type=email] {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    row-gap: 20px;
-  }
+    gap: 20px 40px;  
+}
   .first-part {
     display: flex;
     justify-content: center;
@@ -557,14 +556,18 @@ input[type=text], select, textarea, input[type=email] {
   .second-part {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   .user-persona {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 20px 40px;
   }
   .whsUserPersonaImg {
     max-height: 500px;
+    width: 100%;
   }
   .whsConclusionImg {
     max-height: 800px;
