@@ -578,6 +578,12 @@ input[type=text], select, textarea, input[type=email] {
     row-gap: 20px;
     justify-content: space-around;
   }
+  .conclusion-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    justify-content: space-around;
+  }
   .whsWireframeImg {
     max-height: 700px;
     width: 100%;
